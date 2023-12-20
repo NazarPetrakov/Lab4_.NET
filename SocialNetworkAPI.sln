@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialNetworkAPI", "SocialNetworkAPI\SocialNetworkAPI.csproj", "{62C93318-3189-44A8-8074-60617910758E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62C93318-3189-44A8-8074-60617910758E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62C93318-3189-44A8-8074-60617910758E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62C93318-3189-44A8-8074-60617910758E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62C93318-3189-44A8-8074-60617910758E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {20295B3E-F7BC-42BF-89F8-060149179049}
+	EndGlobalSection
+EndGlobal
