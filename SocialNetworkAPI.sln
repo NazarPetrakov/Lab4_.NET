@@ -5,6 +5,10 @@ VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialNetworkAPI", "SocialNetworkAPI\SocialNetworkAPI.csproj", "{62C93318-3189-44A8-8074-60617910758E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogicLayer", "BusinessLogicLayer\BusinessLogicLayer.csproj", "{27526898-CE96-4E0B-8051-A029C4D9AAD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{FEB5708D-26AC-4419-A44C-1BC78B1D9B46}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{62C93318-3189-44A8-8074-60617910758E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62C93318-3189-44A8-8074-60617910758E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62C93318-3189-44A8-8074-60617910758E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27526898-CE96-4E0B-8051-A029C4D9AAD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27526898-CE96-4E0B-8051-A029C4D9AAD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27526898-CE96-4E0B-8051-A029C4D9AAD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27526898-CE96-4E0B-8051-A029C4D9AAD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEB5708D-26AC-4419-A44C-1BC78B1D9B46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEB5708D-26AC-4419-A44C-1BC78B1D9B46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEB5708D-26AC-4419-A44C-1BC78B1D9B46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEB5708D-26AC-4419-A44C-1BC78B1D9B46}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
