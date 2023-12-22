@@ -9,8 +9,14 @@ namespace DataAccessLayer.Entities
     public class Message : BaseEntity
     {
         public long UserId { get; set; }
+        public User User { get; set; }
+
         public long FriendId { get; set; }
+        public User Friend { get; set; }
+
         public long DialogId { get; set; }
+        public Dialog Dialog { get; set; }
+
         public string Content { get; set; }
         public DateTime SentDateTime { get; set; }
     }

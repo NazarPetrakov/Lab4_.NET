@@ -9,7 +9,9 @@ namespace DataAccessLayer.Entities
     public class Relationship : BaseEntity
     {
         public long UserId { get; set; }
+        public User User { get; set; }
         public long FriendId { get; set; }
+        public User Friend { get; set; }
         public string Status { get; set; }
     }
 }
