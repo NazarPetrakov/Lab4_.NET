@@ -38,29 +38,17 @@ namespace DataAccessLayer.Contexts.Configurations
             builder.HasMany(u => u.Messages)
                 .WithOne(m => m.User)
                 .HasForeignKey(m => m.UserId)
-                .OnDelete(DeleteBehavior.Cascade);
-            builder.HasMany(u => u.Messages)
-                .WithOne(m => m.User)
-                .HasForeignKey(m => m.FriendId)
-                .OnDelete(DeleteBehavior.Cascade);
+                .OnDelete(DeleteBehavior.NoAction);
 
             builder.HasMany(u => u.Dialogs)
                 .WithOne(d => d.User)
                 .HasForeignKey(d => d.UserId)
-                .OnDelete(DeleteBehavior.Cascade);
-            builder.HasMany(u => u.Dialogs)
-                .WithOne(d => d.User)
-                .HasForeignKey(d => d.FriendId)
-                .OnDelete(DeleteBehavior.Cascade);
+                .OnDelete(DeleteBehavior.NoAction);
 
             builder.HasMany(u => u.Relationships)
-                .WithOne(r => r.User)
+                .WithOne(r => r.User) 
                 .HasForeignKey(r => r.UserId)
-                .OnDelete(DeleteBehavior.Cascade);
-            builder.HasMany(u => u.Relationships)
-                .WithOne(r => r.User)
-                .HasForeignKey(r => r.FriendId)
-                .OnDelete(DeleteBehavior.Cascade);
+                .OnDelete(DeleteBehavior.NoAction);
 
         }
     }

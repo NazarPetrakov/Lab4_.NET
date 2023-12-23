@@ -20,8 +20,8 @@ namespace DataAccessLayer.Contexts.Configurations
             builder.HasMany(d => d.Messages)
                 .WithOne(m => m.Dialog)
                 .HasForeignKey(m => m.DialogId)
-                .OnDelete(DeleteBehavior.Cascade);
-
+                .OnDelete(DeleteBehavior.NoAction);
+                
         }
     }
 }

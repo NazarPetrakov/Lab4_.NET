@@ -44,8 +44,7 @@ namespace DataAccessLayer.Migrations
                         name: "FK_Dialogs_Users_FriendId",
                         column: x => x.FriendId,
                         principalTable: "Users",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                     table.ForeignKey(
                         name: "FK_Dialogs_Users_FriendId1",
                         column: x => x.FriendId1,
@@ -72,8 +71,7 @@ namespace DataAccessLayer.Migrations
                         name: "FK_Relationships_Users_FriendId",
                         column: x => x.FriendId,
                         principalTable: "Users",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                     table.ForeignKey(
                         name: "FK_Relationships_Users_FriendId1",
                         column: x => x.FriendId1,
@@ -102,14 +100,12 @@ namespace DataAccessLayer.Migrations
                         name: "FK_Messages_Dialogs_DialogId",
                         column: x => x.DialogId,
                         principalTable: "Dialogs",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                     table.ForeignKey(
                         name: "FK_Messages_Users_FriendId",
                         column: x => x.FriendId,
                         principalTable: "Users",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                     table.ForeignKey(
                         name: "FK_Messages_Users_FriendId1",
                         column: x => x.FriendId1,

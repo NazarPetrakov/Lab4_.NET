@@ -10,10 +10,8 @@ namespace DataAccessLayer.Entities
     {
         public long UserId { get; set; }
         public User User { get; set; }
-
         public long FriendId { get; set; }
         public User Friend { get; set; }
-
         public long DialogId { get; set; }
         public Dialog Dialog { get; set; }
 
