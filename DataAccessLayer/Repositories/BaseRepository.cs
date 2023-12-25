@@ -15,20 +15,20 @@ namespace DataAccessLayer.Repositories
             _context = context;
             _dbSet = context.Set<T>();
         }
-        public async Task<bool> AddAsync(T entity)
+        public async Task AddAsync(T entity)
         {
             await _dbSet.AddAsync(entity);
-            return await SaveAsync();
+            await _context.SaveChangesAsync();
         }
-        public async Task<bool> UpdateAsync(T entity)
+        public async Task UpdateAsync(T entity)
         {
             _dbSet.Update(entity);
-            return await SaveAsync();
+            await _context.SaveChangesAsync();
         }
-        public async Task<bool> DeleteAsync(T entity)
+        public async Task DeleteAsync(T entity)
         {
             _dbSet.Remove(entity);
-             return await SaveAsync();
+            await _context.SaveChangesAsync();
         }
         public async Task<IEnumerable<T>> GetAllAsync()
         {
@@ -42,11 +42,6 @@ namespace DataAccessLayer.Repositories
         {
             var entity = await _dbSet.FindAsync(id);
             return entity is not null;
-        }
-        public async Task<bool> SaveAsync()
-        {
-            var saved = _context.SaveChanges();
-            return saved > 0 ? true : false;
         }
     }
 }

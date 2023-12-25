@@ -8,10 +8,8 @@ namespace DataAccessLayer.Repositories.Interfaces
         Task<T> GetByIdAsync(long id);
         Task<IEnumerable<T>> GetAllAsync();
         Task<bool> IsExistAsync(long id);
-        Task<bool> AddAsync(T entity);
-        Task<bool> UpdateAsync(T entity);
-        Task<bool> DeleteAsync(T entity);
-        Task<bool> SaveAsync();
-
+        Task AddAsync(T entity);
+        Task UpdateAsync(T entity);
+        Task DeleteAsync(T entity);
     }
 }
