@@ -2,6 +2,7 @@
 using DataAccessLayer.Entities;
 using DataAccessLayer.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using System.Linq.Expressions;
 
 namespace DataAccessLayer.Repositories
 {
@@ -42,6 +43,15 @@ namespace DataAccessLayer.Repositories
         {
             var entity = await _dbSet.FindAsync(id);
             return entity is not null;
+        }
+        public async Task<IEnumerable<T>> GetManyWithFilterAsync(Expression<Func<T, bool>> expression)
+        {
+            return await _dbSet.Where(expression).ToListAsync();
+        }
+
+        public async Task<T> GetOneWithFilterAsync(Expression<Func<T, bool>> expression)
+        {
+            return await _dbSet.FirstOrDefaultAsync(expression);
         }
     }
 }
