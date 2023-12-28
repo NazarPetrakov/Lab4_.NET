@@ -27,9 +27,9 @@ namespace DataAccessLayer.Contexts.Configurations
             //    .IsRequired()
             //    .HasColumnType("varchar(255)");
 
-            builder.Property(u => u.Email)
-                .IsRequired()
-                .HasColumnType("varchar(255)");
+            //builder.Property(u => u.Email)
+            //    .IsRequired()
+            //    .HasColumnType("varchar(255)");
 
             builder.Property(u => u.DateOfBirth)
                 .IsRequired();
