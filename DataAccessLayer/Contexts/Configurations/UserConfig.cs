@@ -19,13 +19,13 @@ namespace DataAccessLayer.Contexts.Configurations
                 .IsRequired()
                 .HasColumnType("nvarchar(40)");
 
-            builder.Property(u => u.Login)
-                .IsRequired()
-                .HasColumnType("varchar(32)");
+            //builder.Property(u => u.Login)
+            //    .IsRequired()
+            //    .HasColumnType("varchar(32)");
 
-            builder.Property(u => u.PasswordHash)
-                .IsRequired()
-                .HasColumnType("varchar(255)");
+            //builder.Property(u => u.PasswordHash)
+            //    .IsRequired()
+            //    .HasColumnType("varchar(255)");
 
             builder.Property(u => u.Email)
                 .IsRequired()
@@ -34,7 +34,6 @@ namespace DataAccessLayer.Contexts.Configurations
             builder.Property(u => u.DateOfBirth)
                 .IsRequired();
                 
-
             builder.HasMany(u => u.Messages)
                 .WithOne(m => m.User)
                 .HasForeignKey(m => m.UserId)
